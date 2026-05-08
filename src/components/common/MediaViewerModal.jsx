@@ -29,10 +29,6 @@ function MediaViewerModal({ media, onClose }) {
           />
         )}
       </div>
-
-      <p className="mt-4 body-copy text-sm whitespace-pre-line">
-        {media.caption}
-      </p>
     </ModalShell>
   );
 }

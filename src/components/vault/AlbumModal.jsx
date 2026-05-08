@@ -60,9 +60,6 @@ function AlbumModal({ item, onClose }) {
 
                       <h4 className="mt-3 text-sm font-medium">{media.title}</h4>
 
-                      <p className="mt-2 body-copy line-clamp-3 text-xs">
-                        {media.caption}
-                      </p>
                     </button>
                   ))}
                 </div>
