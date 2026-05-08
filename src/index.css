@@ -282,3 +282,21 @@ img {
     opacity 0.1s linear,
     filter 0.1s linear;
 }
+
+.letter-paper {
+  background-color: var(--color-paper);
+  background-image:
+    radial-gradient(rgba(80, 62, 45, 0.03) 0.6px, transparent 0.6px),
+    radial-gradient(rgba(80, 62, 45, 0.02) 0.8px, transparent 0.8px);
+  background-size: 18px 18px, 24px 24px;
+  background-position: 0 0, 8px 10px;
+  box-shadow: var(--shadow-soft);
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

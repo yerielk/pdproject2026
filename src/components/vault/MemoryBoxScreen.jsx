@@ -3,7 +3,9 @@ import { getObjectState } from "../../utils/objectState";
 import ObjectGrid from "./ObjectGrid";
 import LockedModal from "./LockedModal";
 import CameraRevealModal from "./CameraRevealModal";
-import GenericContentModal from "./GenericContentModal";
+import AlbumModal from "./AlbumModal";
+import MailboxModal from "./MailboxModal";
+import GiftRevealModal from "./GiftRevealModal";
 import { siteContent } from "../../data/siteContent";
 
 function MemoryBoxScreen({ objects, onBackToInvitation }) {
@@ -67,8 +69,20 @@ function MemoryBoxScreen({ objects, onBackToInvitation }) {
 
       {selectedObject &&
         selectedObject.isUnlocked &&
-        selectedObject.type !== "camera" && (
-          <GenericContentModal item={selectedObject} onClose={closeModal} />
+        selectedObject.type === "album" && (
+          <AlbumModal item={selectedObject} onClose={closeModal} />
+        )}
+
+      {selectedObject &&
+        selectedObject.isUnlocked &&
+        selectedObject.type === "mailbox" && (
+          <MailboxModal item={selectedObject} onClose={closeModal} />
+        )}
+
+      {selectedObject &&
+        selectedObject.isUnlocked &&
+        selectedObject.type === "gift" && (
+          <GiftRevealModal item={selectedObject} onClose={closeModal} />
         )}
     </>
   );

@@ -68,71 +68,63 @@ export const siteContent = {
   },
 
   objects: [
-    {
-      id: "camera",
-      type: "camera",
-      title: "폴라로이드 사진기",
-      label: "Polaroid",
-      unlockAt: "2026-05-07T12:00:00+09:00",
-      lockedMessage:
-        "폴라로이드 사진기는 2026년 5월 7일 12:00에 공개됩니다. 그때 다시 눌러주세요.",
-      description:
-        "사진기 버튼을 누르면, 준비해둔 첫 번째 선물이 천천히 인화됩니다.",
-      revealTitle: "첫 번째 선물",
-      revealDescription:
-        "첫 번째 선물은 바로... 예은, 나은입니다! 그게 무슨 뜻이냐고요? 이 초대장은 성동구 텐즈힐 116동 601호에서 5.8 19:00에 열릴 어버이날 축하 파티의 초대장입니다. 관악구와 대전 유성구에서 예은, 나은이 엄마, 아빠를 만나러 갈 예정입니다! 내일 파티를 하면서 공개될 다른 선물들도 기대해 주세요 :)",
-      photoSrc: "/imgs/polaroidphotoedit.jpg",
-      developDurationMs: 20000,
-    },
+  {
+    id: "camera",
+    type: "camera",
+    title: "폴라로이드 사진기",
+    label: "Polaroid",
+    unlockAt: "2026-05-07T12:00:00+09:00",
+    lockedMessage:
+      "폴라로이드 사진기는 2026년 5월 7일 12:00에 공개됩니다. 그때 다시 눌러주세요.",
+    description:
+      "사진기 버튼을 누르면, 준비해둔 첫 번째 선물이 천천히 인화됩니다.",
+    revealTitle: "첫 번째 서프라이즈",
+    revealDescription:
+      "여기에 5월 7일에 공개할 서프라이즈 선물 설명을 나중에 작성하면 돼.",
+    photoSrc: "/imgs/polaroidphotoedit.jpg",
+    developDurationMs: 20000,
+  },
 
-    {
-      id: "mom-letter",
-      type: "letter",
-      title: "엄마에게",
-      label: "Letter",
-      unlockAt: "2026-05-08T19:30:00+09:00",
-      lockedMessage:
-        "엄마에게 쓰는 편지는 2026년 5월 8일 19:30에 공개됩니다.",
-      contentTitle: "엄마에게",
-      contentBody: "여기에 엄마에게 쓰는 편지 내용을 나중에 작성하면 돼.",
-    },
+  {
+    id: "mom-letter",
+    type: "mailbox",
+    recipientKey: "mom",
+    title: "엄마에게",
+    label: "Letter",
+    unlockAt: "2026-05-08T19:30:00+09:00",
+    lockedMessage:
+      "엄마에게 쓰는 편지는 2026년 5월 8일 19:30에 공개됩니다.",
+  },
 
-    {
-      id: "dad-letter",
-      type: "letter",
-      title: "아빠에게",
-      label: "Letter",
-      unlockAt: "2026-05-08T19:30:00+09:00",
-      lockedMessage:
-        "아빠에게 쓰는 편지는 2026년 5월 8일 19:30에 공개됩니다.",
-      contentTitle: "아빠에게",
-      contentBody: "여기에 아빠에게 쓰는 편지 내용을 나중에 작성하면 돼.",
-    },
+  {
+    id: "dad-letter",
+    type: "mailbox",
+    recipientKey: "dad",
+    title: "아빠에게",
+    label: "Letter",
+    unlockAt: "2026-05-08T19:30:00+09:00",
+    lockedMessage:
+      "아빠에게 쓰는 편지는 2026년 5월 8일 19:30에 공개됩니다.",
+  },
 
-    {
-      id: "album",
-      type: "album",
-      title: "가족 앨범",
-      label: "Album",
-      unlockAt: "2026-05-08T19:30:00+09:00",
-      lockedMessage:
-        "가족 앨범은 2026년 5월 8일 19:30에 공개됩니다.",
-      contentTitle: "가족 앨범",
-      contentBody:
-        "여기에 앨범 소개 문구를 넣고, 나중에 가족 사진들을 연결하면 돼.",
-    },
+  {
+    id: "album",
+    type: "album",
+    title: "가족 앨범",
+    label: "Album",
+    unlockAt: "2026-05-08T19:30:00+09:00",
+    lockedMessage:
+      "가족 앨범은 2026년 5월 8일 19:30에 공개됩니다.",
+  },
 
-    {
-      id: "gift-box",
-      type: "gift",
-      title: "선물 상자",
-      label: "Gift",
-      unlockAt: "2026-05-08T19:30:00+09:00",
-      lockedMessage:
-        "선물 상자는 2026년 5월 8일 19:30에 공개됩니다.",
-      contentTitle: "선물 공개",
-      contentBody:
-        "여기에 5월 8일에 공개할 선물 내용을 나중에 작성하면 돼.",
-    },
-  ],
+  {
+    id: "gift-box",
+    type: "gift",
+    title: "선물 상자",
+    label: "Gift",
+    unlockAt: "2026-05-08T19:30:00+09:00",
+    lockedMessage:
+      "선물 상자는 2026년 5월 8일 19:30에 공개됩니다.",
+  },
+],
 };
